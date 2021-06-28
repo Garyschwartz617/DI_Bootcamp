@@ -1,0 +1,40 @@
+nav {
+    text-align: right;
+    background-color: #C55F62 ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+li  {
+    display:inline-block; 
+    font-size: 30px;
+    font-weight: bold;
+    color: #377DC3;
+    padding: 0px 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: #C55F62 ;
+    color: #377DC3;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+}
+.star {
+    position: relative;
+    left: -420px;
+}
+
+body {
+    background-color: #377DC3;
+}
+
+.indent {
+    position: relative;
+    top: 40px;
+}
