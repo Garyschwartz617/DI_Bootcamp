@@ -1,0 +1,109 @@
+
+    header {
+        text-align: right;
+        background-color: #C55F62 ;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    
+    li  {
+        display:inline-block; 
+        font-size: 30px;
+        font-weight: bold;
+        color: #377DC3;
+        padding: 0px 15px;
+    }
+    .shield {
+        position: relative;
+        left: -420px;
+    }
+    
+    body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FhglM4L1ncZ3vyaDjbSRMa0Xzk_pbNW-wQ&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .pg{
+        position: relative;
+        bottom: -350px;
+        color: #377DC3;
+    }
+    section{
+        margin: 0px;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #C55F62 ;
+        color: #377DC3;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin: 0px;
+    }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    li {
+        padding:0px 2px;
+    }
+
+    section{
+        margin: 0px;
+        position: relative;
+        bottom: 40px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    li  {
+        display:inline-block; 
+        font-size: 20px;
+        font-weight: bold;
+        color: #377DC3;
+        padding: 0px 0px;
+    }
+
+    section {
+        margin: 0px;
+        position: relative;
+        bottom: 3em;
+        }
+
+    .shield {
+        position: relative;
+        left: -450px;
+    }    
+ }
+
+@media all and (max-width: 480px) { 
+    section {
+        margin: 0px;
+        position: relative;
+        bottom: 13em;
+        }
+        li  {
+            display:inline-block; 
+            font-size:15px;
+            font-weight: bold;
+            color: #377DC3;
+            padding: 0px 0px;
+        }    
+        ul {
+            padding: 0px;
+            margin: 2px;
+        }
+        .pg{
+            position: relative;
+            bottom: -350px;
+            color: #377DC3;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+}
+
+
