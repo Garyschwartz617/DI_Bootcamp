@@ -1,0 +1,23 @@
+.outer {
+    display: grid;
+    grid-template-rows: repeat(16,44px);
+    grid-template-columns: repeat(16,6.15%);
+    gap: 1px 1px;
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.box1 {
+    background-color: #CCCCCC;
+}
+
+.box2 {
+    background-color: #999999;
+}
+
+.box3 {
+    background-color: #666666;
+}
+.box4 {
+    background-color: #333333;
+}
