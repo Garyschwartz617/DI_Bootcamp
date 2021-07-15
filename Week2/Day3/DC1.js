@@ -1,36 +1,45 @@
-let x = 0;
-let n = "*";
-while(x < 6){
-    console.log(n.repeat(x +1))
-    x++;
+// let x = 0;
+// let n = "*";
+// while(x < 6){
+//     console.log(n.repeat(x +1))
+//     x++;
+// }
+
+for (let i = 1; i <= 6; i++) {
+    let y = "";
+    for (let x = 0; x < i; x++){
+        y+= "*"
+    }
+     console.log(y)
 }
 
-let x = 0;
-let n = "*";
-while(x < 6){
-    x++;
-    while(1 <= x && x < 6 ){
-        x++;
-        while(2 <= x && x < 6 ){
-            x++;
-            while(3 <= x && x < 6 ){
-                x++;
-                while(4 <= x && x < 6 ){
-                    x++;
-                    while(5 <= x && x < 6 ){
-                        x++;
-                        console.log(n,)
-                    }
-                    console.log(n,n)
-                }
-                console.log(n,n,n)
-            }
-            console.log(n,n,n,n)
-        }
-        console.log(n,n,n,n,n,n)
-    }
-    console.log(n,n,n,n,n,n)
-}
+
+// let x = 0;
+// let n = "*";
+// while(x < 6){
+//     x++;
+//     while(1 <= x && x < 6 ){
+//         x++;
+//         while(2 <= x && x < 6 ){
+//             x++;
+//             while(3 <= x && x < 6 ){
+//                 x++;
+//                 while(4 <= x && x < 6 ){
+//                     x++;
+//                     while(5 <= x && x < 6 ){
+//                         x++;
+//                         console.log(n,)
+//                     }
+//                     console.log(n,n)
+//                 }
+//                 console.log(n,n,n)
+//             }
+//             console.log(n,n,n,n)
+//         }
+//         console.log(n,n,n,n,n,n)
+//     }
+//     console.log(n,n,n,n,n,n)
+// }
 
 // let n = "*";
 // // for (let i = 0; i < 6; i++) {

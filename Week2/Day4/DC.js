@@ -1,4 +1,4 @@
-let words = prompt('Words seperated by commas', 'words,words,words');
+let words = prompt('Words seperated by commas', 'hello,world,in,a,frame');
 
 function wor(words){
     const myArr = words.split(",");
@@ -15,7 +15,7 @@ function wor(words){
         let y = " "
         let q = len.length  - iterator.length
         let f = y.repeat(q)
-        console.log(`${x}${iterator}${f}${x}`)
+        console.log(`${x} ${iterator}${f} ${x}`)
     }
 }
 
@@ -31,9 +31,9 @@ function border(words){
     }
     let sum = w.length
     let x = "*"
-    console.log(x.repeat(sum+2))
+    console.log(x.repeat(sum+4))
     wor(words)
-    console.log(x.repeat(sum+2))
+    console.log(x.repeat(sum+4))
 }
 border(words)
 

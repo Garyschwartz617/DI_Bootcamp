@@ -1,0 +1,46 @@
+HTML
+1. a section conating two other blocks,one for palate and other for canvas
+-palate has 1 button and 21 divs
+-css flex box to make next to eachother
+- grid for palate  3 coloumns 8 rows
+-button span
+-canvas: grid rows and colums, border,gap
+
+2. palat
+-array of colors
+-loop through array
+- in loop dreate div add a color and ass a class
+-append to main div
+
+3.canvas
+-loop through 24*60
+-in loop create div and append to main div
+xrows
+y columns
+
+click on color fetch the color
+-eventlistener click
+-event.target
+- create variable assign style.backgroundcolor of target
+
+in for loop where created canvas add eventlistener of click in each new div
+function assigncolor
+event object
+change backgroundcolor based on global variable
+
+
+create global variable which is boolean
+-if mousedown-global variable becoes true
+-if mouseup-global variable becoes false
+
+
+mouseover and mousedown
+- add the events to each div of grid
+apint each div
+
+mousedown and mouseout
+-stop paint
+
+clear button
+-add event listener
+- makes background color to white

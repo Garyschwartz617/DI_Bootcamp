@@ -14,18 +14,20 @@ let allBooks = [
 
 } 
 ]
-
-let listBooks = document.querySelector("listBooks")
-for (const iterator of allBooks) {
+let listBooks = document.getElementsByClassName("listBooks")
+for (let index = 0; index <= allBooks.length; index++) {
+    const element = allBooks[index];
     let newDiv = document.createElement('div')
-    let newTextNode = document.createTextNode(`${title} written by ${author}`);
+    let newTextNode = document.createTextNode(`${element.title} written by ${element.author}`);
+    console.log(newTextNode)
     newDiv.appendChild(newTextNode);
-    listBooks.appendChild(newDiv)
-    
+    listBooks[0].appendChild(newDiv)
+    let newImg = document.createElement('img')
+    newImg.setAttribute("src",element.image)
+    newDiv.appendChild(newImg);
+    newImg.style.width = "100px"
+    newImg.style.height = "100px"
+    if(!element.alreadyRead){
+        newDiv.style.background = "red"
+    }
 }
-// for (let index = 0; index < allBooks.length; index++) {
-//     const element = allBooks[index];
-//     let newDiv = document.createElement('div')
-//     let newTextNode = document.createTextNode(`${title} written by ${author}`);
-    
-// }
