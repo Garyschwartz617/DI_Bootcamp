@@ -7,9 +7,8 @@ age = 2021 - year
 print(age)
 age = str(age)
 dig = list(age)
-# dig = age.split('')
 print(dig)
-num = dig[1]
+num = dig[len(dig)- 1]
 print (num)
 num = int(num)
 if (11 - num)%2 == 0:
