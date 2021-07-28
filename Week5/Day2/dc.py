@@ -14,7 +14,7 @@ class Gene():
 
 
 
-class Chromosome(Gene):
+class Chromosome():
     def __init__(self):
         self.chro = [Gene() for x in range(3)]
 
@@ -26,16 +26,18 @@ class Chromosome(Gene):
 
     def print_chro(self):
         lst = []
-        for chr in self.chro:
-            lst.append(chr.code())
+        for gene in self.chro:
+            lst.append(gene.x)
         # print(lst)
         return lst    
 
 
 
-class DNA(Chromosome):        
+class DNA():        
     def __init__(self):
         self.dna = [Chromosome() for x in range(3)]
+            
+        print(self.dna.x)
 
     def print_gene(self):
         fst = []
@@ -78,20 +80,20 @@ w =Organism(99)
 x = True
 lst = []
 y = 1
-for n in w.print_gene():
-    for f in n:
-        lst.append(f)
+# for n in w.print_gene():
+#     for f in n:
+#         lst.append(f)
                 
-print(lst)            
-while x:
-    lst = []
-    for n in w.print_gene():
-        for f in n:
-            lst.append(f)
+# print(lst)            
+# while x:
+#     lst = []
+#     for n in w.print_gene():
+#         for f in n:
+#             lst.append(f)
 
-    print(y)
-    y+=1
-    if 0 in lst:
-        w.mutate_gene()
-    else:
-        x = False 
+#     print(y)
+#     y+=1
+#     if 0 in lst:
+#         w.mutate_gene()
+#     else:
+#         x = False 

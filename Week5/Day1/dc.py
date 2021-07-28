@@ -6,7 +6,7 @@ class Farm:
 
     def add_animal(self, animal_name, amount= 1):
         if animal_name in self.dct.keys():
-            self.dct[f"{animal_name}"] = self.dct[f"{animal_name}"] + amount
+            self.dct[f"{animal_name}"] +=  amount
         else:
             self.dct[f"{animal_name}"] = amount   
     def get_info(self):
@@ -15,7 +15,7 @@ class Farm:
         print("E-I-E-I-O")  
 
 
-mc = Farm("OL McDonalds")          
+mc = Farm("OL McDonald")          
 mc.add_animal("cow", 5)
 mc.add_animal("sheep" )
 mc.add_animal("sheep" )

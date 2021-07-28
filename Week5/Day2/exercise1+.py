@@ -11,12 +11,12 @@ class Family():
         # print(self.lst)
    
     def born(self,name,age,gender,is_child):
-        dict = {}
-        dict["name"] = name
-        dict["age"] = age
-        dict["gender"] = gender
-        dict["is_child"] = is_child
-        self.lst.append(dict)
+        self.dict = {}
+        self.dict["name"] = name
+        self.dict["age"] = age
+        self.dict["gender"] = gender
+        self.dict["is_child"] = is_child
+        self.lst.append(self.dict)
 
     def members(self):
         for sf in self.lst:
@@ -80,15 +80,15 @@ class TheIncredibles(Family):
           print(sf["name"],sf["incredible_name"],sf["power"])
 
     def born(self,name,age,gender,is_child,power,incredible_name):
-        # super().born(name,age,gender,is_child)
-        dict = {}
-        dict["name"] = name
-        dict["age"] = age
-        dict["gender"] = gender
-        dict["is_child"] = is_child
-        dict["power"] = power
-        dict["incredible_name"] = incredible_name
-        self.lst.append(dict)
+        super().born(name,age,gender,is_child)
+        # dict = {}
+        # dict["name"] = name
+        # dict["age"] = age
+        # dict["gender"] = gender
+        # dict["is_child"] = is_child
+        self.dict["power"] = power
+        self.dict["incredible_name"] = incredible_name
+        self.lst.append(self.dict)
 
 pr1 = Incredible("Bob",45,"Male",False,"Super Strength","Mr. Incredible")
 pr2 = Incredible("Helen",43,"Female",False,"Elastic Limbs","Elastagirl")
