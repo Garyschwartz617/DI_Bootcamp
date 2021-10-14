@@ -2,8 +2,8 @@ import random
 def print_gallows():
     gallows = ['0', '/', '|', '\\', '/', '\\']
     fn = gallows[:counter] + [" " for num in range(0,6-counter)]
-    print(fn)
-    print(*fn)
+    # print(fn)
+    # print(*fn)
     print('''
     ____
     |   |
